@@ -12,3 +12,7 @@ def home(request):
                "feature": models.Feature.objects.first(),
                "sections": models.Section.objects.all()}
     return render_to_response('index.html', context)
+
+
+def home_build(request):
+    return render_to_response('build.html')
